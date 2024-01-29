@@ -27,7 +27,7 @@
 
 ### Checkpoint-1
 
-```
+```c
 #pragma config FOSC = HS
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
@@ -85,7 +85,7 @@ void main(void) {
 
 Checkpoint-2
 
-```
+```c
 #pragma config FOSC = HS
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
