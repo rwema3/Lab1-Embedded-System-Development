@@ -9,7 +9,7 @@
 
 ## ScreenShoot For checkpoint-1
 
-
+![Screenshot (31)](https://github.com/rwema3/Lab1-Embedded-System-Development/assets/52289151/28bca9f8-9095-4c64-a712-889340d37bec)
 
 # Checkpoint-2
 
@@ -19,5 +19,7 @@
 - proteus design for Checkpoint 1 ->  ..\Proteus design\blink LED\check_2
 
 ## ScreenShoot For checkpoint-2
+
+![scrn](https://github.com/rwema3/Lab1-Embedded-System-Development/assets/52289151/14f45d29-7ecf-4b40-b148-44ad9da0aa56)
 
 -------
