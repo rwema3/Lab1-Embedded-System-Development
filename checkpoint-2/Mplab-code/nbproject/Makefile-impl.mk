@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=checkpoint_2.X
+PROJECTNAME=Mplab-code
 
 # Active Configuration
 DEFAULTCONF=default
