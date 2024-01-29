@@ -34,6 +34,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 "92 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
 [v __delay `JF972 ~T0 @X0 0 e ]
 [p i __delay ]
+"1 main_function.c
+[p x FOSC  =  HS ]
+"2
+[p x WDTE  =  OFF ]
+"3
+[p x PWRTE  =  OFF ]
+"4
+[p x BOREN  =  ON ]
+"5
+[p x LVP  =  OFF ]
+"6
+[p x CPD  =  OFF ]
+"7
+[p x WRT  =  OFF ]
+"8
+[p x CP  =  OFF ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -214,136 +230,136 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2363
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"6 main_function.c
-[; ;main_function.c: 6: void initializePorts(void) {
+"15 main_function.c
+[; ;main_function.c: 15: void initializePorts(void) {
 [v _initializePorts `(v ~T0 @X0 1 ef ]
 {
 [e :U _initializePorts ]
 [f ]
-"7
-[; ;main_function.c: 7:     TRISB = 0x00;
+"16
+[; ;main_function.c: 16:     TRISB = 0x00;
 [e = _TRISB -> -> 0 `i `uc ]
-"8
-[; ;main_function.c: 8:     TRISC = 0x00;
+"17
+[; ;main_function.c: 17:     TRISC = 0x00;
 [e = _TRISC -> -> 0 `i `uc ]
-"9
-[; ;main_function.c: 9:     TRISD = 0x00;
+"18
+[; ;main_function.c: 18:     TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"10
-[; ;main_function.c: 10:     TRISE = 0x00;
+"19
+[; ;main_function.c: 19:     TRISE = 0x00;
 [e = _TRISE -> -> 0 `i `uc ]
-"11
-[; ;main_function.c: 11:     TRISA = 0x00;
+"20
+[; ;main_function.c: 20:     TRISA = 0x00;
 [e = _TRISA -> -> 0 `i `uc ]
-"12
-[; ;main_function.c: 12: }
+"21
+[; ;main_function.c: 21: }
 [e :UE 99 ]
 }
-"15
-[; ;main_function.c: 15: void turnOnAllLEDs(char *port) {
+"23
+[; ;main_function.c: 23: void turnOnAllLEDs(char *port) {
 [v _turnOnAllLEDs `(v ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _turnOnAllLEDs ]
 [v _port `*uc ~T0 @X0 1 r1 ]
 [f ]
-"16
-[; ;main_function.c: 16:     *port = 0xFF;
+"24
+[; ;main_function.c: 24:     *port = 0xFF;
 [e = *U _port -> -> 255 `i `uc ]
-"17
-[; ;main_function.c: 17: }
+"25
+[; ;main_function.c: 25: }
 [e :UE 100 ]
 }
-"20
-[; ;main_function.c: 20: void turnOffAllLEDs(char *port) {
+"26
+[; ;main_function.c: 26: void turnOffAllLEDs(char *port) {
 [v _turnOffAllLEDs `(v ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _turnOffAllLEDs ]
 [v _port `*uc ~T0 @X0 1 r1 ]
 [f ]
-"21
-[; ;main_function.c: 21:     *port = 0x00;
+"27
+[; ;main_function.c: 27:     *port = 0x00;
 [e = *U _port -> -> 0 `i `uc ]
-"22
-[; ;main_function.c: 22: }
+"28
+[; ;main_function.c: 28: }
 [e :UE 101 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"24
-[; ;main_function.c: 24: void main(void) {
+"30
+[; ;main_function.c: 30: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"25
-[; ;main_function.c: 25:     char *portB = &PORTB;
+"31
+[; ;main_function.c: 31:     char *portB = &PORTB;
 [v _portB `*uc ~T0 @X0 1 a ]
 [e = _portB -> &U _PORTB `*uc ]
-"26
-[; ;main_function.c: 26:     char *portC = &PORTC;
+"32
+[; ;main_function.c: 32:     char *portC = &PORTC;
 [v _portC `*uc ~T0 @X0 1 a ]
 [e = _portC -> &U _PORTC `*uc ]
-"27
-[; ;main_function.c: 27:     char *portD = &PORTD;
+"33
+[; ;main_function.c: 33:     char *portD = &PORTD;
 [v _portD `*uc ~T0 @X0 1 a ]
 [e = _portD -> &U _PORTD `*uc ]
-"28
-[; ;main_function.c: 28:     char *portE = &PORTE;
+"34
+[; ;main_function.c: 34:     char *portE = &PORTE;
 [v _portE `*uc ~T0 @X0 1 a ]
 [e = _portE -> &U _PORTE `*uc ]
-"29
-[; ;main_function.c: 29:     char *portA = &PORTA;
+"35
+[; ;main_function.c: 35:     char *portA = &PORTA;
 [v _portA `*uc ~T0 @X0 1 a ]
 [e = _portA -> &U _PORTA `*uc ]
-"31
-[; ;main_function.c: 31:     initializePorts();
+"37
+[; ;main_function.c: 37:     initializePorts();
 [e ( _initializePorts ..  ]
-"33
-[; ;main_function.c: 33:     while(1) {
+"39
+[; ;main_function.c: 39:     while(1) {
 [e :U 104 ]
 {
-"34
-[; ;main_function.c: 34:         turnOnAllLEDs(portB);
+"40
+[; ;main_function.c: 40:         turnOnAllLEDs(portB);
 [e ( _turnOnAllLEDs (1 _portB ]
-"35
-[; ;main_function.c: 35:         turnOnAllLEDs(portC);
-[e ( _turnOnAllLEDs (1 _portC ]
-"36
-[; ;main_function.c: 36:         turnOnAllLEDs(portD);
-[e ( _turnOnAllLEDs (1 _portD ]
-"37
-[; ;main_function.c: 37:         turnOnAllLEDs(portE);
-[e ( _turnOnAllLEDs (1 _portE ]
-"38
-[; ;main_function.c: 38:         turnOnAllLEDs(portA);
-[e ( _turnOnAllLEDs (1 _portA ]
-"39
-[; ;main_function.c: 39:         _delay((unsigned long)((500)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "41
-[; ;main_function.c: 41:         turnOffAllLEDs(portB);
-[e ( _turnOffAllLEDs (1 _portB ]
+[; ;main_function.c: 41:         turnOnAllLEDs(portC);
+[e ( _turnOnAllLEDs (1 _portC ]
 "42
-[; ;main_function.c: 42:         turnOffAllLEDs(portC);
-[e ( _turnOffAllLEDs (1 _portC ]
+[; ;main_function.c: 42:         turnOnAllLEDs(portD);
+[e ( _turnOnAllLEDs (1 _portD ]
 "43
-[; ;main_function.c: 43:         turnOffAllLEDs(portD);
-[e ( _turnOffAllLEDs (1 _portD ]
+[; ;main_function.c: 43:         turnOnAllLEDs(portE);
+[e ( _turnOnAllLEDs (1 _portE ]
 "44
-[; ;main_function.c: 44:         turnOffAllLEDs(portE);
-[e ( _turnOffAllLEDs (1 _portE ]
+[; ;main_function.c: 44:         turnOnAllLEDs(portA);
+[e ( _turnOnAllLEDs (1 _portA ]
 "45
-[; ;main_function.c: 45:         turnOffAllLEDs(portA);
-[e ( _turnOffAllLEDs (1 _portA ]
-"46
-[; ;main_function.c: 46:         _delay((unsigned long)((100)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main_function.c: 45:         _delay((unsigned long)((500)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
 "47
-[; ;main_function.c: 47:     }
+[; ;main_function.c: 47:         turnOffAllLEDs(portB);
+[e ( _turnOffAllLEDs (1 _portB ]
+"48
+[; ;main_function.c: 48:         turnOffAllLEDs(portC);
+[e ( _turnOffAllLEDs (1 _portC ]
+"49
+[; ;main_function.c: 49:         turnOffAllLEDs(portD);
+[e ( _turnOffAllLEDs (1 _portD ]
+"50
+[; ;main_function.c: 50:         turnOffAllLEDs(portE);
+[e ( _turnOffAllLEDs (1 _portE ]
+"51
+[; ;main_function.c: 51:         turnOffAllLEDs(portA);
+[e ( _turnOffAllLEDs (1 _portA ]
+"52
+[; ;main_function.c: 52:         _delay((unsigned long)((100)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"53
+[; ;main_function.c: 53:     }
 }
 [e :U 103 ]
 [e $U 104  ]
 [e :U 105 ]
-"48
-[; ;main_function.c: 48: }
+"54
+[; ;main_function.c: 54: }
 [e :UE 102 ]
 }

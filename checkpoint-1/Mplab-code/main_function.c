@@ -1,24 +1,30 @@
+#pragma config FOSC = HS
+#pragma config WDTE = OFF
+#pragma config PWRTE = OFF
+#pragma config BOREN = ON
+#pragma config LVP = OFF
+#pragma config CPD = OFF
+#pragma config WRT = OFF
+#pragma config CP = OFF
+
 #include <xc.h>
 
 #define _XTAL_FREQ 20000000 // Using 20MHz Crystal
 
-// Function to initialize the ports
+
 void initializePorts(void) {
-    TRISB = 0x00; // Configure PORTB as output
-    TRISC = 0x00; // Configure PORTC as output
-    TRISD = 0x00; // Configure PORTD as output
-    TRISE = 0x00; // Configure PORTE as output
-    TRISA = 0x00; // Configure PORTA as output
+    TRISB = 0x00; 
+    TRISC = 0x00; 
+    TRISD = 0x00; 
+    TRISE = 0x00; 
+    TRISA = 0x00; 
 }
 
-// Function to turn ON all LEDs for the specified port
 void turnOnAllLEDs(char *port) {
-    *port = 0xFF; // Turn ON all LEDs for the specified port
+    *port = 0xFF; 
 }
-
-// Function to turn OFF all LEDs for the specified port
 void turnOffAllLEDs(char *port) {
-    *port = 0x00; // Turn OFF all LEDs for the specified port
+    *port = 0x00; 
 }
 
 void main(void) {
@@ -43,6 +49,6 @@ void main(void) {
         turnOffAllLEDs(portD);
         turnOffAllLEDs(portE);
         turnOffAllLEDs(portA);
-        __delay_ms(100); // Delay of 500ms
+        __delay_ms(100); // Delay of 100ms
     }
 }

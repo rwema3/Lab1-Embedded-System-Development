@@ -11,13 +11,13 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"6 D:\WorksGt\Lab1-Embedded-System-Development\checkpoint-1\Mplab-code\main_function.c
+"15 D:\WorksGt\Lab1-Embedded-System-Development\checkpoint-1\Mplab-code\main_function.c
 [v _initializePorts initializePorts `(v  1 e 1 0 ]
-"15
+"23
 [v _turnOnAllLEDs turnOnAllLEDs `(v  1 e 1 0 ]
-"20
+"26
 [v _turnOffAllLEDs turnOffAllLEDs `(v  1 e 1 0 ]
-"24
+"30
 [v _main main `(v  1 e 1 0 ]
 "166 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
@@ -39,35 +39,35 @@
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
 "1561
 [v _TRISE TRISE `VEuc  1 e 1 @137 ]
-"24 D:\WorksGt\Lab1-Embedded-System-Development\checkpoint-1\Mplab-code\main_function.c
+"30 D:\WorksGt\Lab1-Embedded-System-Development\checkpoint-1\Mplab-code\main_function.c
 [v _main main `(v  1 e 1 0 ]
 {
-"29
+"35
 [v main@portA portA `*.39uc  1 a 2 8 ]
-"28
+"34
 [v main@portE portE `*.39uc  1 a 2 6 ]
-"27
+"33
 [v main@portD portD `*.39uc  1 a 2 4 ]
-"26
+"32
 [v main@portC portC `*.39uc  1 a 2 2 ]
-"25
+"31
 [v main@portB portB `*.39uc  1 a 2 0 ]
-"48
+"54
 } 0
-"15
+"23
 [v _turnOnAllLEDs turnOnAllLEDs `(v  1 e 1 0 ]
 {
 [v turnOnAllLEDs@port port `*.39uc  1 p 2 0 ]
-"17
+"25
 } 0
-"20
+"26
 [v _turnOffAllLEDs turnOffAllLEDs `(v  1 e 1 0 ]
 {
 [v turnOffAllLEDs@port port `*.39uc  1 p 2 0 ]
-"22
+"28
 } 0
-"6
+"15
 [v _initializePorts initializePorts `(v  1 e 1 0 ]
 {
-"12
+"21
 } 0
