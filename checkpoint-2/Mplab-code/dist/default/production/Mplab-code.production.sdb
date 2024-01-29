@@ -11,9 +11,9 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"6 D:\WorksGt\Lab1-Embedded-System-Development\checkpoint-2\Mplab-code\checkpoint_2.c
+"15 D:\WorksGt\Lab1-Embedded-System-Development\checkpoint-2\Mplab-code\checkpoint_2.c
 [v _toggleLED toggleLED `(v  1 e 1 0 ]
-"20
+"29
 [v _main main `(v  1 e 1 0 ]
 [s S43 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
@@ -63,18 +63,18 @@
 "1454
 [u S94 . 1 `S85 1 . 1 0 ]
 [v _TRISCbits TRISCbits `VES94  1 e 1 @135 ]
-"20 D:\WorksGt\Lab1-Embedded-System-Development\checkpoint-2\Mplab-code\checkpoint_2.c
+"29 D:\WorksGt\Lab1-Embedded-System-Development\checkpoint-2\Mplab-code\checkpoint_2.c
 [v _main main `(v  1 e 1 0 ]
 {
-"24
+"33
 [v main@buttonState buttonState `i  1 a 2 5 ]
-"29
+"38
 } 0
-"6
+"15
 [v _toggleLED toggleLED `(v  1 e 1 0 ]
 {
 [v toggleLED@buttonState buttonState `*.1i  1 a 1 wreg ]
 [v toggleLED@buttonState buttonState `*.1i  1 a 1 wreg ]
 [v toggleLED@buttonState buttonState `*.1i  1 a 1 4 ]
-"18
+"27
 } 0

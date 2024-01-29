@@ -44,6 +44,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1454
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1454: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x087)));
 [v _TRISCbits `VS61 ~T0 @X0 0 e@135 ]
+"1 checkpoint_2.c
+[p x FOSC  =  HS ]
+"2
+[p x WDTE  =  OFF ]
+"3
+[p x PWRTE  =  OFF ]
+"4
+[p x BOREN  =  ON ]
+"5
+[p x LVP  =  OFF ]
+"6
+[p x CPD  =  OFF ]
+"7
+[p x WRT  =  OFF ]
+"8
+[p x CP  =  OFF ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -224,79 +240,79 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2363
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"6 checkpoint_2.c
-[; ;checkpoint_2.c: 6: void toggleLED(int *buttonState) {
+"15 checkpoint_2.c
+[; ;checkpoint_2.c: 15: void toggleLED(int *buttonState) {
 [v _toggleLED `(v ~T0 @X0 1 ef1`*i ]
 {
 [e :U _toggleLED ]
 [v _buttonState `*i ~T0 @X0 1 r1 ]
 [f ]
-"7
-[; ;checkpoint_2.c: 7:     if (PORTCbits.RC0 == 0) {
+"16
+[; ;checkpoint_2.c: 16:     if (PORTCbits.RC0 == 0) {
 [e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 100  ]
 {
-"9
-[; ;checkpoint_2.c: 9:         *buttonState = !(*buttonState);
+"18
+[; ;checkpoint_2.c: 18:         *buttonState = !(*buttonState);
 [e = *U _buttonState -> ! != *U _buttonState -> 0 `i `i ]
-"10
-[; ;checkpoint_2.c: 10:     }
+"19
+[; ;checkpoint_2.c: 19:     }
 }
 [e :U 100 ]
-"13
-[; ;checkpoint_2.c: 13:     if (*buttonState == 1) {
+"22
+[; ;checkpoint_2.c: 22:     if (*buttonState == 1) {
 [e $ ! == *U _buttonState -> 1 `i 101  ]
 {
-"14
-[; ;checkpoint_2.c: 14:         PORTBbits.RB0 = 1;
+"23
+[; ;checkpoint_2.c: 23:         PORTBbits.RB0 = 1;
 [e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
-"15
-[; ;checkpoint_2.c: 15:     } else {
+"24
+[; ;checkpoint_2.c: 24:     } else {
 }
 [e $U 102  ]
 [e :U 101 ]
 {
-"16
-[; ;checkpoint_2.c: 16:         PORTBbits.RB0 = 0;
+"25
+[; ;checkpoint_2.c: 25:         PORTBbits.RB0 = 0;
 [e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
-"17
-[; ;checkpoint_2.c: 17:     }
+"26
+[; ;checkpoint_2.c: 26:     }
 }
 [e :U 102 ]
-"18
-[; ;checkpoint_2.c: 18: }
+"27
+[; ;checkpoint_2.c: 27: }
 [e :UE 99 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"20
-[; ;checkpoint_2.c: 20: void main() {
+"29
+[; ;checkpoint_2.c: 29: void main() {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"21
-[; ;checkpoint_2.c: 21:     TRISBbits.TRISB0 = 0;
+"30
+[; ;checkpoint_2.c: 30:     TRISBbits.TRISB0 = 0;
 [e = . . _TRISBbits 0 0 -> -> 0 `i `uc ]
-"22
-[; ;checkpoint_2.c: 22:     TRISCbits.TRISC0 = 1;
+"31
+[; ;checkpoint_2.c: 31:     TRISCbits.TRISC0 = 1;
 [e = . . _TRISCbits 0 0 -> -> 1 `i `uc ]
-"24
-[; ;checkpoint_2.c: 24:     int buttonState = 0;
+"33
+[; ;checkpoint_2.c: 33:     int buttonState = 0;
 [v _buttonState `i ~T0 @X0 1 a ]
 [e = _buttonState -> 0 `i ]
-"26
-[; ;checkpoint_2.c: 26:     while(1) {
+"35
+[; ;checkpoint_2.c: 35:     while(1) {
 [e :U 105 ]
 {
-"27
-[; ;checkpoint_2.c: 27:         toggleLED(&buttonState);
+"36
+[; ;checkpoint_2.c: 36:         toggleLED(&buttonState);
 [e ( _toggleLED (1 &U _buttonState ]
-"28
-[; ;checkpoint_2.c: 28:     }
+"37
+[; ;checkpoint_2.c: 37:     }
 }
 [e :U 104 ]
 [e $U 105  ]
 [e :U 106 ]
-"29
-[; ;checkpoint_2.c: 29: }
+"38
+[; ;checkpoint_2.c: 38: }
 [e :UE 103 ]
 }
