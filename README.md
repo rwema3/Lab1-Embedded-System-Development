@@ -1,4 +1,4 @@
-# Lab1-Embedded-System-Development
+# Lab1-Embedded-System-Development course
 
 # Checkpoint-1
 
